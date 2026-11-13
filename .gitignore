@@ -1,4 +1,4 @@
-# Chỉ đồng bộ bộ nhớ (memory). Mọi thứ khác bị bỏ qua.
+# Chỉ đồng bộ bộ nhớ (memory) và script đồng bộ. Mọi thứ khác bị bỏ qua.
 *
 
 !.gitignore
@@ -6,9 +6,11 @@
 !projects/*/
 !projects/*/memory/
 !projects/*/memory/**
+!scripts/
+!scripts/**
 
 # File sao lưu tạm trong memory (nếu có)
 *.bak*
 
-# Thu m?c memory ri�ng c?a m�y b�n (d� li�n k?t t?i C--Users-PC)
+# Thư mục memory riêng của máy bàn (liên kết tới C--Users-PC)
 /projects/C--Users-Admin/

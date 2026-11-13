@@ -8,6 +8,9 @@
 !projects/*/memory/**
 !scripts/
 !scripts/**
+!skills/
+!skills/push-memory/
+!skills/push-memory/SKILL.md
 
 # File sao lưu tạm trong memory (nếu có)
 *.bak*

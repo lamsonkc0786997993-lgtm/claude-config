@@ -9,3 +9,6 @@
 
 # File sao lÆ°u táº¡m trong memory (náº¿u cÃ³)
 *.bak*
+
+# Thu m?c memory riêng c?a máy bàn (dã liên k?t t?i C--Users-PC)
+/projects/C--Users-Admin/

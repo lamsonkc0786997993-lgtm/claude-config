@@ -1,0 +1,13 @@
+﻿- [User profile](user-profile.md) — Vietnamese speaker on Windows 11; reply in Vietnamese; wants work done end-to-end and tested
+- [Working preferences](working-preferences.md) — verify before "xong"; never restart Om yourself; give full-path `!` commands when auto mode blocks
+- [OmniRoute = "Om"](omniroute-nickname-om.md) — user calls their local OmniRoute gateway "Om" (localhost:20128, C:\Users\PC\OmniRoute)
+- [Om providers status](om-providers-status.md) — working free/Gemini models, security config, CHANGEME password, pending items (as of 2026-11-11)
+- [Claude Chat web page](claude-web-chat-setup.md) — self-hosted chat at claude-web-chat\: files, features, safe restart/test/data rules
+- [Claude Code add-ons](claude-code-addons.md) — Superpowers plugin, desktop shortcuts Ctrl+Alt+C/O/W, claude-mem declined
+- [Agent Reach installed](agent-reach-installed.md) — read-only web/YouTube/GitHub CLI at ~\.local\bin; use --python 3.12 with uv
+- [Auto-save memory](auto-memory-hook.md) — SessionEnd/PreCompact hook + Claude Chat idle sweep run auto-memory.mjs → claude -p sonnet updates this dir; log at ~\.claude\auto-memory\log.txt
+- [Đọc bản vẽ (QS)](doc-ban-ve-skill.md) — user là QS; skill /doc-ban-ve, /markitdown; việc dở: so sánh bản vẽ cũ/mới ra Excel
+- [QS AI tools & Zalo](qs-ai-tools-zalo-research.md) — tools researched/declined (Perplexity, Firecrawl, PostHog, Composio); Zalo cá nhân summary skill deleted
+- [Token saving](token-saving.md) — default model Sonnet; delegate side work to haiku/sonnet subagents; read narrowly
+- [Video 3D piezo lighter](video-3d-piezo-lighter-project.md) — kênh "2 Phút Học Thêm", quy tắc 3d.md, dự án bật lửa piezo, môi trường chưa xác nhận
+- [Message tags /noi, /yc](message-tags-noi-yc.md) — /noi = statement, only acknowledge; /yc = request, act and report

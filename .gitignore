@@ -1,0 +1,11 @@
+# Chỉ đồng bộ bộ nhớ (memory). Mọi thứ khác bị bỏ qua.
+*
+
+!.gitignore
+!projects/
+!projects/*/
+!projects/*/memory/
+!projects/*/memory/**
+
+# File sao lưu tạm trong memory (nếu có)
+*.bak*

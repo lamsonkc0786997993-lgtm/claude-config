@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # /push-memory — đẩy memory lên GitHub
 
-Repo: `C:\Users\PC\.claude` (remote `claude-config`, Private). Chỉ theo dõi `projects\*\memory`.
+Repo: `$env:USERPROFILE\.claude` (remote `claude-config`, Private; trên laptop là `C:\Users\PC\.claude`, trên máy bàn là `C:\Users\Admin\.claude`). Chỉ theo dõi `projects\*\memory`. Trên máy bàn, `projects\C--Users-Admin\memory` là junction trỏ vào `projects\C--Users-PC\memory`, nên thay đổi memory ở đó vẫn được theo dõi.
 
 Trả lời bằng tiếng Việt. Làm theo đúng thứ tự, không bỏ bước.
 

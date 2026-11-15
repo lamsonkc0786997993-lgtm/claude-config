@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 7314b395-916b-4d21-9c0c-7afdfcc09d23
-  modified: 2026-11-13T19:11:59.404Z
+  modified: 2026-11-13T20:54:04.263Z
 ---
 
 Built 2026-11-11 so the user has a claude.ai-like web chat that goes through Om instead of claude.ai.
@@ -35,5 +35,7 @@ Built 2026-11-11 so the user has a claude.ai-like web chat that goes through Om 
 - Sidebar section "Mục lục skill" (under "Kỹ năng", collapsible arrow, state remembered) lists Claude Code skills: name + short Vietnamese description on one line (built-in VN description map for ~35 skills; fallback first sentence of original), full VN tooltip on hover, "Hay dùng" top-5 (usage in localStorage), then "Của bạn", "Plugin". Click fills `/tên ` into the input only (Claude Chat can't run Claude Code skills). Refreshes every 60s + on tab focus.
 - server.js endpoint `/api/cc-skills` scans SKILL.md files (skills without a file on disk, e.g. dataviz/run/claude-api, don't appear). Backups `*.bak-before-skillindex`.
 - User first asked right side, then left, finally in the left sidebar with a dropdown arrow. Also built a Claude Code terminal mod `skill-index` (right pane, `/skill-index`) in `~\.claude\dev-mods\<session>\skill-index`; pane only draws when terminal ≥144 cols.
+
+**Status 2026-11-14:** Chat already goes through Om by default (`http://localhost:20128/v1`, /api/ping upstreamUp true). `config.json` has no `omniKey` yet, so the free-model list can't load; user must create a key at Dashboard → api-manager and paste it in the chat's free-model dialog (pending). `config.json` also stores the dashboard password in plain text (suggested moving it to an env var; not done).
 
 Related: [[omniroute-nickname-om]], [[om-providers-status]], [[claude-code-addons]], [[working-preferences]]

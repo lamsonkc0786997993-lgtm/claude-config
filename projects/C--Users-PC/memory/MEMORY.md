@@ -10,4 +10,5 @@
 - [QS AI tools & Zalo](qs-ai-tools-zalo-research.md) — tools researched/declined (Perplexity, Firecrawl, PostHog, Composio); Zalo cá nhân summary skill deleted
 - [Token saving](token-saving.md) — default model Sonnet; delegate side work to haiku/sonnet subagents; read narrowly
 - [Video 3D piezo lighter](video-3d-piezo-lighter-project.md) — kênh "2 Phút Học Thêm", quy tắc 3d.md, dự án bật lửa piezo, môi trường chưa xác nhận
+- [Đồng bộ memory 2 máy](memory-sync-two-machines.md) — laptop(PC)/máy bàn(Admin) qua GitHub claude-config; pull tự động, /push-memory thủ công
 - [Message tags /noi, /yc](message-tags-noi-yc.md) — /noi = statement, only acknowledge; /yc = request, act and report

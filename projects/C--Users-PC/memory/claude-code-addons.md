@@ -5,12 +5,12 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 7314b395-916b-4d21-9c0c-7afdfcc09d23
-  modified: 2026-11-12T08:51:44.131Z
+  modified: 2026-11-13T20:59:12.467Z
 ---
 
 - Superpowers plugin 7.0.0 installed 2026-11-11 via `/plugin install superpowers@claude-plugins-official` (user scope). 6 of its skills were also copied into the Claude Chat page (renamed Vietnamese: Ý tưởng, Kế hoạch, Gỡ lỗi, Test trước, Xem góp ý code, Kiểm chứng) via `claude-web-chat\import-skills.mjs` + `rename-skills.mjs`; re-run import after `/plugin update superpowers` (matches by `source`, keeps Vietnamese names).
 - Agent Reach skill at `~/.claude/skills/agent-reach` — see [[agent-reach-installed]].
-- Desktop shortcuts: "Claude Code" (Ctrl+Alt+C, icon `claude-web-chat\claude-code-icon.ico`, wt → powershell → claude), "Claude Chat (OmniRoute)" (Ctrl+Alt+O, QS icon `claude-web-chat\icon.ico`, runs start.vbs which auto-starts Om), "Claude Web" (Ctrl+Alt+W → claude.ai). Icons built from user-supplied SVGs via headless Edge render + System.Drawing → multi-size .ico.
+- Desktop shortcuts: "Claude Code" (Ctrl+Alt+C, icon `claude-web-chat\claude-code-icon.ico`, wt → powershell -File `claude-web-chat\claude-code-om.ps1` → sets ANTHROPIC_BASE_URL=http://localhost:20128/v1, if Om is down, auto-starts it minimized via `npm run dev` in C:\Users\PC\OmniRoute and waits up to 120s for port 20128, then runs claude; updated 2026-11-14, full cold-start flow not yet tested live since Om must not be restarted by Claude; `npm run dev` is slow, `npm run start` alternative needs a prebuilt build, unconfirmed), "Claude Chat (OmniRoute)" (Ctrl+Alt+O, QS icon `claude-web-chat\icon.ico`, runs start.vbs which auto-starts Om), "Claude Web" (Ctrl+Alt+W → claude.ai). Icons built from user-supplied SVGs via headless Edge render + System.Drawing → multi-size .ico.
 - `/om` skill at `~/.claude/skills/om/SKILL.md` (user-invoked only, added 2026-11-11). It checks Om is up (offers to start it if down; never restarts it), asks which page to open (Combos / main Dashboard), asks for a final "Mở / Huỷ" confirmation, then opens the pages. The user explicitly wants a question before anything runs.
 - Om fallback combos file `C:\Users\PC\om-claude-fallback-combos.json` (4 combos named after the Claude model ids: Claude first, then Gemini → GLM → Kimi). The user imported it on 2026-11-11 via Dashboard → Combos → Import → Merge. Verified: the combos table has all 4 alongside the user's own "Kimi Coding" combo, and Claude Code requests now log combo_name=claude-opus-5-5. The actual 429→Gemini fallthrough has not been seen live yet; to check, look in call_logs for rows with combo_name set and provider≠claude.
 - GitHub: `gh` 2.103.3 at `C:\Program Files\GitHub CLI\gh.exe` (not on bash PATH—use full path), logged in as `lamsonkc0786997993-lgtm` (2026-11-12), git global user/email set, `gh auth setup-git` done. No repos yet; ask before pushing anything.

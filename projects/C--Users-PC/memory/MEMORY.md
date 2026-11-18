@@ -16,3 +16,4 @@
 - [Ảnh mẫu nhân vật bằng Gemini web](gemini-web-character-refs.md) — quy trình browser-use + Gemini Plus, 21 ảnh già/trẻ/Lưu Thiện đã chốt (2026-11-17)
 - [Phong cách kể chuyện Tam Quốc](phong-cach-ke-chuyen-tam-quoc.md) — quy tắc duyệt cảnh/nhân vật/ảnh mẫu của user, chỉ cho dự án truyện iContent; đọc trước khi tạo hay sửa tập
 - [Ổ H đã dọn](o-h-layout.md) — H:\ cái gì không được di chuyển (HF, iContent, ZaloData, FreeCut) và bố cục thư mục mới
+- [Công cụ dựng phim hoạt hình (đang bàn)](xuong-hoat-hinh-tool-ban-ve.md) — học "Xưởng Hoạt Hình Code", 3 hướng A/B/C trên nền iContent; CHƯA làm, chờ user chọn

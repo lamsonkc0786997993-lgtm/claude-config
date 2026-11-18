@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 7314b395-916b-4d21-9c0c-7afdfcc09d23
-  modified: 2026-11-13T20:54:04.263Z
+  modified: 2026-11-15T17:56:16.954Z
 ---
 
 Built 2026-11-11 so the user has a claude.ai-like web chat that goes through Om instead of claude.ai.
@@ -25,8 +25,13 @@ Built 2026-11-11 so the user has a claude.ai-like web chat that goes through Om 
 **Added 2026-11-12:**
 - Sidebar: collapsible sections (arrows), "Dự án code" list (saved in store.json `codeProjects`; click opens Claude Code window in that folder), Claude Code window with image paste/drag/+Ảnh (stream-json, max 5 imgs ≤5MB), Model selector + hint to switch to Sonnet/Opus when mentioning bản vẽ/.pdf, session id + log persisted server-side (300 lines, so laptop sees same session).
 - "Bản vẽ" toggle next to Internet: tools `ban_ve_muc_luc` / `ban_ve_xem_trang` (PDF only from Downloads/Documents/Desktop), hint to use Sonnet/Opus. Uses skill [[doc-ban-ve-skill]].
-- Remote access: server also listens on Tailscale IP 100.68.127.21:3939 (env CHAT_TS_IP), Basic auth user `chat`, password in Windows user env CHAT_PASSWORD (never store it here). localhost needs no password. Pending: user's password is weak/reused → recommend changing.
+- Remote access: server also listens on Tailscale IP 100.68.127.21:3939 (env CHAT_TS_IP), Basic auth user `chat`, password in Windows user env CHAT_PASSWORD (never store it here). localhost needs no password. Password was changed 2026-11-16 to a random 24-char value (stored only in the user env var; never write it here). Desktop (`admin`, Tailscale 100.80.149.1) connects to http://100.68.127.21:3939 — see [[memory-sync-two-machines]].
 - Backups `server.js.bak-before-*`, `index.html.bak-before-*` made before each edit.
+
+**Added 2026-11-16:**
+- Password was later changed again to a user-chosen weaker value (still only in env var CHAT_PASSWORD; user was warned it's weak). The earlier "random 24-char" note is superseded.
+- Autostart: `Claude Chat.lnk` in the Startup folder runs `claude-web-chat\autostart.ps1` (waits up to 3 min for the Tailscale IP, starts Om minimized if down, starts the chat server hidden; idempotent). Not yet verified by a real reboot. Remove the .lnk to disable.
+- Desktop access is via option 1 (open laptop's chat over Tailscale); it only works while the laptop is on. Server must be restarted if it started before Tailscale had an IP (it binds the Tailscale IP only at startup). Keep CHAT_MEMORY enabled on the laptop.
 
 **Added 2026-11-14:**
 - The "Nỗ lực" (effort) selector moved from the composer toolbar to the topbar, right after the model picker (same ids, so JS unchanged). Backup `index.html.bak-before-effort-move`. Not yet checked visually at phone width.

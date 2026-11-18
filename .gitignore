@@ -11,6 +11,12 @@
 !skills/
 !skills/push-memory/
 !skills/push-memory/SKILL.md
+!skills/dlvideo/
+!skills/dlvideo/SKILL.md
+!skills/Wvideo/
+!skills/Wvideo/SKILL.md
+!skills/dwvideo/
+!skills/dwvideo/SKILL.md
 
 # File sao lưu tạm trong memory (nếu có)
 *.bak*

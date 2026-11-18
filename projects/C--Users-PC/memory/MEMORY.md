@@ -12,3 +12,7 @@
 - [Video 3D piezo lighter](video-3d-piezo-lighter-project.md) — kênh "2 Phút Học Thêm", quy tắc 3d.md, dự án bật lửa piezo, môi trường chưa xác nhận
 - [Đồng bộ memory 2 máy](memory-sync-two-machines.md) — laptop(PC)/máy bàn(Admin) qua GitHub claude-config; pull tự động, /push-memory thủ công
 - [Message tags /noi, /yc](message-tags-noi-yc.md) — /noi = statement, only acknowledge; /yc = request, act and report
+- [Thư viện nhân vật TikTok](tiktok-story-character-library.md) — 9 nhân vật chibi Tam Quốc ở H:\iContent\assets\nhan-vat\tam-quoc\; tập mới dùng tao_tap_moi.py; vẽ nhân vật mới phải lưu vào đây
+- [Ảnh mẫu nhân vật bằng Gemini web](gemini-web-character-refs.md) — quy trình browser-use + Gemini Plus, 21 ảnh già/trẻ/Lưu Thiện đã chốt (2026-11-17)
+- [Phong cách kể chuyện Tam Quốc](phong-cach-ke-chuyen-tam-quoc.md) — quy tắc duyệt cảnh/nhân vật/ảnh mẫu của user, chỉ cho dự án truyện iContent; đọc trước khi tạo hay sửa tập
+- [Ổ H đã dọn](o-h-layout.md) — H:\ cái gì không được di chuyển (HF, iContent, ZaloData, FreeCut) và bố cục thư mục mới

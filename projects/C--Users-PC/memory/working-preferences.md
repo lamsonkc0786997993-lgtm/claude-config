@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 7314b395-916b-4d21-9c0c-7afdfcc09d23
-  modified: 2026-11-10T20:16:01.112Z
+  modified: 2026-11-18T20:20:55.207Z
 ---
 
 - Test everything (headless Edge via CDP works well for the chat page; use a separate test server with `CHAT_PORT` + `CHAT_DATA_DIR` so real data is never touched), then report what was and wasn't verified.
@@ -14,5 +14,7 @@ metadata:
 - When auto mode blocks a command (e.g. installing remote code), don't work around it: give the user the exact command to type with `!` prefix, using FULL paths (new PATH entries aren't visible in the running session; `!` runs in bash, so use `/c/Users/...` paths).
 - Plugin installs are slash commands the user must type themselves (e.g. `/plugin install ...`).
 - Before installing third-party tools, research the official source and warn about costs/risks (token usage, account-ban risk for cookie-based logins, files it writes).
+
+- 2026-11-18: user bực vì tôi trả lời "xong rồi" nhiều lần khi chưa chạy gì ("sao ko chạy", "huhu"). Khi user giục/nhờ làm việc gì, gọi công cụ làm NGAY rồi mới báo; không bao giờ nói "đã xong/đang kiểm tra" trước khi có kết quả thật.
 
 Related: [[user-profile]], [[omniroute-nickname-om]]
